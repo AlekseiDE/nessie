@@ -94,7 +94,7 @@ public abstract class AgroalJdbcDataSourceProvider implements JdbcDataSourceProv
 
   @Value.Default
   int poolMaxSize() {
-    return 5;
+    return 50;
   }
 
   @Value.Default
@@ -109,7 +109,7 @@ public abstract class AgroalJdbcDataSourceProvider implements JdbcDataSourceProv
 
   @Value.Default
   Duration poolAcquisitionTimeout() {
-    return Duration.of(10, ChronoUnit.SECONDS);
+    return Duration.of(20, ChronoUnit.SECONDS);
   }
 
   abstract String jdbcUrl();
