@@ -94,7 +94,7 @@ public abstract class AgroalJdbcDataSourceProvider implements JdbcDataSourceProv
 
   @Value.Default
   int poolMaxSize() {
-    return 50;
+    return 230;
   }
 
   @Value.Default
